@@ -1,6 +1,7 @@
 ---
 title: "Comunicado sobre la supresión de cargos en la Comisión del Patrimonio Cultural de la Nación"
 date: 2026-07-31
+enlace: https://www.instagram.com/p/Db8ywMaPKGD/
 resumen: "Ante el Proyecto de Ley de Rendición de Cuentas, que prevé suprimir cargos vacantes en la CPCN."
 ---
 

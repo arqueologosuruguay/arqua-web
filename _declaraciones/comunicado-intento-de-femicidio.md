@@ -2,7 +2,7 @@
 title: "Ante el intento de femicidio ocurrido en la Facultad de Medicina"
 date: 2026-09-04
 resumen: "Comunicado ante el intento de femicidio del 1.º de setiembre en la Facultad de Medicina de la Udelar."
-enlace: https://www.instagram.com/arqua.difusion/
+enlace: https://www.instagram.com/p/Dc3iB7kIF3R/
 ---
 
 Desde Arqua expresamos nuestro más enérgico repudio al intento de femicidio ocurrido el pasado 1.º de setiembre en la Facultad de Medicina de la Universidad de la República.
