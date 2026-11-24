@@ -2,12 +2,61 @@
 
 <h3>XII Congreso Nacional de Arqueología 2026</h3>
 <p>Mercedes (Soriano), 15 al 18 de abril de 2026.</p>
-<div class="galeria">
-  <figure><img src="{{ '/assets/img/galeria/cnau-2026/01-apertura.jpg' | relative_url }}" alt="Sala llena durante la apertura del congreso" loading="lazy"><figcaption>Apertura del congreso</figcaption></figure>
-  <figure><img src="{{ '/assets/img/galeria/cnau-2026/02-ponencia.jpg' | relative_url }}" alt="Dos personas presentan una ponencia frente al público" loading="lazy"><figcaption>Presentación de ponencias</figcaption></figure>
-  <figure><img src="{{ '/assets/img/galeria/cnau-2026/03-conversatorio.jpg' | relative_url }}" alt="Tres panelistas conversan frente al público en el auditorio" loading="lazy"><figcaption>Conversatorio</figcaption></figure>
-  <figure><img src="{{ '/assets/img/galeria/cnau-2026/04-simposio.jpg' | relative_url }}" alt="Público sentado escuchando en una sala con cuadros" loading="lazy"><figcaption>Simposio</figcaption></figure>
-  <figure><img src="{{ '/assets/img/galeria/cnau-2026/05-ponencia-virtual.jpg' | relative_url }}" alt="Ponencia con participación por videollamada" loading="lazy"><figcaption>Ponencia con participación a distancia</figcaption></figure>
-  <figure><img src="{{ '/assets/img/galeria/cnau-2026/06-mesa-de-trabajo.jpg' | relative_url }}" alt="Grupo reunido alrededor de una mesa de trabajo" loading="lazy"><figcaption>Mesa de trabajo</figcaption></figure>
-  <figure><img src="{{ '/assets/img/galeria/cnau-2026/07-encuentro.jpg' | relative_url }}" alt="Grupo de participantes al aire libre de noche" loading="lazy"><figcaption>Encuentro entre colegas</figcaption></figure>
+{% assign total_cnau = 74 %}
+<div class="galeria galeria--visor" data-visor>
+  {% for i in (1..total_cnau) %}{% capture n %}{% if i < 10 %}0{% endif %}{{ i }}{% endcapture %}
+  <a href="{{ '/assets/img/galeria/cnau-2026/' | append: n | append: '.jpg' | relative_url }}"><img src="{{ '/assets/img/galeria/cnau-2026/mini/' | append: n | append: '.jpg' | relative_url }}" alt="XII Congreso Nacional de Arqueología, foto {{ i }} de {{ total_cnau }}" width="600" height="450" loading="lazy"></a>{% endfor %}
 </div>
+
+<dialog class="visor" aria-label="Visor de fotos">
+  <img class="visor__foto" alt="">
+  <p class="visor__contador" aria-live="polite"></p>
+  <button type="button" class="visor__cerrar" aria-label="Cerrar">&times;</button>
+  <button type="button" class="visor__flecha visor__flecha--ant" aria-label="Foto anterior">&#8249;</button>
+  <button type="button" class="visor__flecha visor__flecha--sig" aria-label="Foto siguiente">&#8250;</button>
+</dialog>
+
+<script>
+(function () {
+  var visor = document.querySelector('.visor');
+  if (!visor || typeof visor.showModal !== 'function') return; // sin soporte: los enlaces abren la foto
+  var foto = visor.querySelector('.visor__foto');
+  var contador = visor.querySelector('.visor__contador');
+  var enlaces = [], actual = 0;
+  document.querySelectorAll('[data-visor] a').forEach(function (a) {
+    var i = enlaces.length;
+    enlaces.push(a);
+    a.addEventListener('click', function (e) { e.preventDefault(); abrir(i); });
+  });
+  function mostrar(i) {
+    actual = (i + enlaces.length) % enlaces.length;
+    var a = enlaces[actual];
+    foto.src = a.href;
+    foto.alt = a.querySelector('img').alt;
+    contador.textContent = (actual + 1) + ' / ' + enlaces.length;
+    [actual + 1, actual - 1].forEach(function (j) { // precarga las vecinas
+      var v = enlaces[(j + enlaces.length) % enlaces.length];
+      if (v) new Image().src = v.href;
+    });
+  }
+  function abrir(i) { mostrar(i); visor.showModal(); }
+  visor.querySelector('.visor__flecha--sig').addEventListener('click', function () { mostrar(actual + 1); });
+  visor.querySelector('.visor__flecha--ant').addEventListener('click', function () { mostrar(actual - 1); });
+  visor.querySelector('.visor__cerrar').addEventListener('click', function () { visor.close(); });
+  visor.addEventListener('click', function (e) { if (e.target === visor) visor.close(); });
+  visor.addEventListener('close', function () { enlaces[actual].focus(); });
+  document.addEventListener('keydown', function (e) {
+    if (!visor.open) return;
+    if (e.key === 'ArrowRight') mostrar(actual + 1);
+    if (e.key === 'ArrowLeft') mostrar(actual - 1);
+  });
+  var x0 = null;
+  visor.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+  visor.addEventListener('touchend', function (e) {
+    if (x0 === null) return;
+    var dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 40) mostrar(actual + (dx < 0 ? 1 : -1));
+    x0 = null;
+  });
+})();
+</script>
