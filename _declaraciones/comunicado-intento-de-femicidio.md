@@ -1,8 +1,12 @@
 ---
-title: "Comunicado ante el intento de femicidio en la Facultad de Medicina"
+title: "Ante el intento de femicidio ocurrido en la Facultad de Medicina"
 date: 2026-09-04
-resumen: "Comunicado de la Comisión Directiva de Arqua."
+resumen: "Comunicado ante el intento de femicidio del 1.º de setiembre en la Facultad de Medicina de la Udelar."
 enlace: https://www.instagram.com/arqua.difusion/
 ---
 
-[Pegar acá el texto del comunicado publicado en Instagram el 4 de setiembre de 2026.]
+Desde Arqua expresamos nuestro más enérgico repudio al intento de femicidio ocurrido el pasado 1.º de setiembre en la Facultad de Medicina de la Universidad de la República.
+
+Quienes integramos Arqua somos profesionales formadxs en la Udelar, así como estudiantes, docentes y funcionarios que participamos cotidianamente de sus espacios. Por este motivo y por la gravedad de la situación, nos sentimos interpeladxs como colectivo y parte de la comunidad universitaria.
+
+[Pegar acá el resto del comunicado.]

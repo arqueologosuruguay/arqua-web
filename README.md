@@ -22,7 +22,7 @@ Para que una novedad deje de aparecer en el inicio y pase al archivo, marcá **P
 | Declaraciones | `_declaraciones/` |
 | Autoridades | `_data/autoridades.yml` |
 | Inicio | `index.html` |
-| Páginas de texto | `asociate.md`, `contacto.md`, `publicaciones.md`, `institucional/` |
+| Páginas de texto | `asociate.md`, `contacto.md`, `institucional/` |
 | Fotos y PDF | `assets/img/` y `assets/pdf/` |
 | Colores y estilos | `assets/css/main.css` |
 | Datos generales (correos, redes) | `_config.yml` |

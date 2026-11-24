@@ -13,7 +13,7 @@ Arqua nuclea a profesionales de la arqueología con especialización en distinta
 
 ## Qué hacemos
 
-Según el artículo 2 de nuestros Estatutos, Arqua trabaja para:
+Según el artículo 2 de nuestro Estatuto, Arqua trabaja para:
 
 - **Profesión:** defender los derechos e intereses de quienes ejercen la arqueología, y a sus integrantes ante discriminación o postergación profesional.
 - **Ética:** promover normas éticas para el ejercicio de la profesión y velar por su cumplimiento.
@@ -24,11 +24,11 @@ Según el artículo 2 de nuestros Estatutos, Arqua trabaja para:
 
 Arqua es una asociación civil sin fines de lucro, independiente de partidos políticos, escuelas científicas y creencias religiosas.
 
-## Estatutos
+## Estatuto
 
-Los Estatutos vigentes fueron aprobados en 2015 y no tienen reformas.
+El Estatuto vigente fue aprobado en 2015 y no tiene reformas.
 
-<p><a class="boton boton--oscuro" href="{{ '/assets/pdf/estatutos-arqua-2015.pdf' | relative_url }}">Descargar los Estatutos (PDF)</a></p>
+<p><a class="boton boton--oscuro" href="{{ '/assets/pdf/estatutos-arqua-2015.pdf' | relative_url }}">Descargar estatuto</a></p>
 
 ## Más sobre Arqua
 

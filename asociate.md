@@ -5,7 +5,7 @@ bajada: Si trabajás o estudiás arqueología en Uruguay, sumate a Arqua. Partic
 
 ## Categorías de socias y socios
 
-Según el artículo 4 de los Estatutos:
+Según el artículo 4 del Estatuto:
 
 | Categoría | Quién puede serlo | En la Asamblea |
 |---|---|---|
@@ -23,22 +23,4 @@ Según el artículo 4 de los Estatutos:
 
 ## Cuota
 
-Según el Reglamento de Recaudación aprobado por la Asamblea Anual Ordinaria del 21 de agosto de 2020:
-
-| Categoría | Cuota anual |
-|---|---|
-| Fundadoras, fundadores, activas y activos | 1 UR |
-| Suscriptoras, suscriptores y adherentes | 1/2 UR |
-
-- **Período:** la cuota cubre el año calendario, del 1 de enero al 31 de diciembre, y debe estar al día al 31 de diciembre.
-- **Valor de la UR:** si se paga entre enero y junio, se toma la UR de diciembre del año anterior. Si se paga entre julio y diciembre, la UR de junio del año en curso.
-- **Forma de pago:** en un solo pago o hasta en tres veces. Los medios de pago los define la Comisión Directiva.
-- **Nuevo ingreso:** quienes se asocien entre el 1 de noviembre y el 31 de diciembre pueden empezar a pagar desde el año siguiente.
-- **Residencia en el exterior:** quienes vivan fuera del país por al menos 2 años pueden pedir la exoneración de la cuota.
-- **Atraso:** la falta de pago suspende los derechos hasta regularizar. La Comisión Directiva puede dar una prórroga de hasta 60 días.
-
-Las socias y los socios honorarios no pagan cuota.
-
-<p class="aviso">Los datos para el pago se envían por correo desde tesorería: <a href="mailto:{{ site.correo_tesoreria }}">{{ site.correo_tesoreria }}</a>.</p>
-
-<p><a class="boton boton--oscuro" href="{{ '/assets/pdf/reglamento-recaudacion-2020.pdf' | relative_url }}">Descargar el Reglamento de Recaudación (PDF)</a></p>
+Si te interesa saber más sobre las cuotas y otras formas de colaborar, escribinos a tesorería: [{{ site.correo_tesoreria }}](mailto:{{ site.correo_tesoreria }}).

@@ -3,7 +3,11 @@ layout: base
 title: Inicio
 ---
 <section class="portada">
-  <div class="portada__fila">
+  <figure class="portada__foto">
+    <img src="{{ '/assets/img/portada.jpg' | relative_url }}" alt="Panteón en un campo de Cerro Largo bajo un cielo nublado">
+    <figcaption>Panteón en Cerro Largo. Foto: Moira Sotelo y Paula Larghero</figcaption>
+  </figure>
+  <div class="contenedor portada__caja">
     <div class="portada__texto">
       <p class="antetitulo">Desde 2015</p>
       <h1>Asociación de Arqueología del Uruguay</h1>
@@ -14,10 +18,6 @@ title: Inicio
         <a class="boton boton--borde" href="{{ '/asociate/' | relative_url }}">Asociate</a>
       </div>
     </div>
-    <figure class="portada__foto">
-      <img src="{{ '/assets/img/portada.jpg' | relative_url }}" alt="Panteones en un campo florecido de Cerro Largo">
-      <figcaption>Panteones en Cerro Largo. Foto: Moira Sotelo y Paula Larghero</figcaption>
-    </figure>
   </div>
 </section>
 
@@ -33,7 +33,7 @@ title: Inicio
       <a href="{{ '/institucional/autoridades/' | relative_url }}">Autoridades <span aria-hidden="true">→</span></a>
       <a href="{{ '/institucional/subcomisiones/' | relative_url }}">Subcomisiones de trabajo <span aria-hidden="true">→</span></a>
       <a href="{{ '/posicionamientos/' | relative_url }}">Posicionamientos y declaraciones <span aria-hidden="true">→</span></a>
-      <a href="{{ '/assets/pdf/estatutos-arqua-2015.pdf' | relative_url }}">Estatutos (PDF) <span aria-hidden="true">→</span></a>
+      <a href="{{ '/assets/pdf/estatutos-arqua-2015.pdf' | relative_url }}">Estatuto (PDF) <span aria-hidden="true">→</span></a>
     </nav>
   </div>
 </section>
