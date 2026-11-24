@@ -1,0 +1,18 @@
+---
+title: Posicionamientos
+bajada: Declaraciones públicas de Arqua y aportes sobre la legislación de patrimonio.
+---
+<h2>Declaraciones</h2>
+<ul class="lista-docs">
+{% assign ds = site.declaraciones | sort: "date" | reverse %}
+{% for d in ds %}
+  <li><a href="{{ d.url | relative_url }}">{{ d.title }}</a> <time datetime="{{ d.date | date: '%Y-%m-%d' }}">{% include fecha.html fecha=d.date %}</time></li>
+{% endfor %}
+</ul>
+
+<h2>Ley de Patrimonio</h2>
+<p>Documentos elaborados por Arqua durante la discusión del proyecto de Ley de Patrimonio.</p>
+<ul class="lista-docs">
+  <li><a href="{{ '/assets/pdf/redaccion-alternativa-ley-patrimonio-2018.pdf' | relative_url }}">Redacción alternativa de la Ley de Patrimonio (PDF)</a> <span class="anio">Diciembre de 2018</span></li>
+  <li><a href="{{ '/assets/pdf/analisis-proyecto-ley-patrimonio-2017.pdf' | relative_url }}">Análisis del Proyecto de Ley de Patrimonio (PDF)</a> <span class="anio">Diciembre de 2017</span></li>
+</ul>

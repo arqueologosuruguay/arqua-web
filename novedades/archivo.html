@@ -1,0 +1,11 @@
+---
+title: Archivo de novedades
+antetitulo: Novedades
+bajada: Novedades de 2019 a 2021, publicadas en la web anterior de Arqua.
+---
+{% assign viejas = site.novedades | where: "archivo", true | sort: "date" | reverse %}
+<ul class="lista-docs">
+{% for n in viejas %}
+  <li><a href="{{ n.url | relative_url }}">{{ n.title }}</a> <span class="anio">{% include fecha.html fecha=n.date texto=n.fecha_texto %}</span></li>
+{% endfor %}
+</ul>

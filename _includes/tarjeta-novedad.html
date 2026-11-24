@@ -1,0 +1,9 @@
+{%- assign n = include.n -%}
+<article class="tarjeta">
+  {% if n.imagen %}<img src="{{ n.imagen | relative_url }}" alt="{{ n.imagen_texto | default: '' }}" loading="lazy">{% else %}<div class="tarjeta__sin-imagen"><span></span>{{ n.tipo }}</div>{% endif %}
+  <div class="tarjeta__cuerpo">
+    <p class="meta"><span class="etiqueta">{{ n.tipo }}</span> <time datetime="{{ n.date | date: '%Y-%m-%d' }}">{% include fecha.html fecha=n.date texto=n.fecha_texto %}</time></p>
+    <h3><a href="{{ n.url | relative_url }}">{{ n.title }}</a></h3>
+    {% if n.resumen %}<p>{{ n.resumen }}</p>{% endif %}
+  </div>
+</article>

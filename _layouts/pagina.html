@@ -1,0 +1,11 @@
+---
+layout: base
+---
+<div class="contenedor angosto pagina">
+  {% if page.antetitulo %}<p class="antetitulo">{{ page.antetitulo }}</p>{% endif %}
+  <h1>{{ page.title }}</h1>
+  {% if page.bajada %}<p class="bajada">{{ page.bajada }}</p>{% endif %}
+  <div class="texto">
+  {{ content }}
+  </div>
+</div>

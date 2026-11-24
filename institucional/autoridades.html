@@ -1,0 +1,22 @@
+---
+title: Autoridades
+antetitulo: Institucional
+---
+{% assign a = site.data.autoridades %}
+<p>{{ a.elecciones }}</p>
+<p>Según los Estatutos, la Comisión Directiva tiene 5 titulares y 5 suplentes, y la Comisión Fiscal 3 titulares y 3 suplentes. Ambas duran 3 años.</p>
+
+<h2>Comisión Directiva</h2>
+<table><thead><tr><th>Período</th><th>Titulares</th><th>Suplentes</th></tr></thead><tbody>
+{% for f in a.directiva %}<tr><td>{{ f.periodo }}</td><td>{{ f.titulares }}</td><td>{{ f.suplentes }}</td></tr>{% endfor %}
+</tbody></table>
+
+<h2>Comisión Fiscal</h2>
+<table><thead><tr><th>Período</th><th>Titulares</th><th>Suplentes</th></tr></thead><tbody>
+{% for f in a.fiscal %}<tr><td>{{ f.periodo }}</td><td>{{ f.titulares }}</td><td>{{ f.suplentes }}</td></tr>{% endfor %}
+</tbody></table>
+
+<h2>Comisión Electoral</h2>
+<table><thead><tr><th>Período</th><th>Titulares</th></tr></thead><tbody>
+{% for f in a.electoral %}<tr><td>{{ f.periodo }}</td><td>{{ f.titulares }}</td></tr>{% endfor %}
+</tbody></table>

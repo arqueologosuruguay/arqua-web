@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title and page.url != "/" %}{{ page.title }} · {% endif %}Arqua, {{ site.nombre }}</title>
+<meta name="description" content="{{ page.resumen | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+<link rel="icon" href="{{ '/assets/img/favicon.png' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="contenedor cabecera__fila">
+    <a class="cabecera__logo" href="{{ '/' | relative_url }}" aria-label="Arqua, ir al inicio">
+      <img src="{{ '/assets/img/logo-arqua.png' | relative_url }}" alt="Arqua" width="105" height="46">
+    </a>
+    <details class="menu-movil">
+      <summary>Menú</summary>
+      <nav aria-label="Menú principal">{% include menu.html %}</nav>
+    </details>
+    <nav class="menu" aria-label="Menú principal">{% include menu.html %}</nav>
+  </div>
+</header>
+<main id="contenido">
+{{ content }}
+</main>
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__columnas">
+      <div>
+        <p class="pie__marca">Arqua</p>
+        <p>{{ site.nombre }}</p>
+        <p>Montevideo, Uruguay</p>
+      </div>
+      <div>
+        <p class="pie__titulo">Contacto</p>
+        <p><a href="mailto:{{ site.correo }}">{{ site.correo }}</a></p>
+        <p>Tesorería: <a href="mailto:{{ site.correo_tesoreria }}">{{ site.correo_tesoreria }}</a></p>
+      </div>
+      <div>
+        <p class="pie__titulo">Seguinos</p>
+        <div class="redes">
+          <a href="{{ site.instagram }}" aria-label="Instagram de Arqua"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor"/></svg></a>
+          <a href="{{ site.facebook }}" aria-label="Facebook de Arqua"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 8H17V4.5h-2.5A3.5 3.5 0 0 0 11 8v2.5H8.5V14H11v6.5h3.5V14H17l.5-3.5h-3V8.5c0-.3.2-.5.5-.5z"/></svg></a>
+          {% if site.youtube != "" %}<a href="{{ site.youtube }}" aria-label="Canal de YouTube de Arqua"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="3.5"/><path d="M10 9.3v5.4l4.6-2.7z"/></svg></a>{% endif %}
+        </div>
+      </div>
+    </div>
+    <p class="pie__legal">{{ site.nombre }} (Arqua). Nombre registrado: {{ site.nombre_registrado }}. © {{ site.time | date: "%Y" }}.</p>
+  </div>
+</footer>
+</body>
+</html>

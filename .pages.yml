@@ -1,0 +1,87 @@
+# Configuración del panel de edición (Pages CMS: https://app.pagescms.org)
+media:
+  input: assets/img/subidas
+  output: /assets/img/subidas
+  categories: [image, document]
+
+content:
+  - name: novedades
+    label: Novedades
+    type: collection
+    path: _novedades
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [title, date, tipo]
+      sort: [date, title]
+      default: { sort: date, order: desc }
+    fields:
+      - { name: title, label: Título, type: string, required: true }
+      - { name: date, label: Fecha, type: date, required: true }
+      - { name: fecha_texto, label: "Fecha en texto (opcional, por ejemplo «3 y 4 de octubre de 2026»)", type: string }
+      - name: tipo
+        label: Tipo
+        type: select
+        required: true
+        options: { values: [Noticia, Evento, Declaración, Asamblea, Congreso, Curso, Prensa] }
+      - { name: imagen, label: Imagen, type: image }
+      - { name: imagen_texto, label: "Descripción de la imagen (para personas que no ven)", type: string }
+      - { name: resumen, label: "Resumen (una o dos frases)", type: text }
+      - { name: archivo, label: "Pasar al archivo", type: boolean, default: false }
+      - { name: body, label: Texto, type: rich-text }
+
+  - name: declaraciones
+    label: Declaraciones
+    type: collection
+    path: _declaraciones
+    filename: "{primary}.md"
+    view:
+      fields: [title, date]
+      default: { sort: date, order: desc }
+    fields:
+      - { name: title, label: Título, type: string, required: true }
+      - { name: date, label: Fecha, type: date, required: true }
+      - { name: resumen, label: Resumen, type: text }
+      - { name: pdf, label: "PDF (opcional)", type: file }
+      - { name: enlace, label: "Enlace a la publicación original (opcional)", type: string }
+      - { name: body, label: Texto, type: rich-text }
+
+  - name: autoridades
+    label: Autoridades
+    type: file
+    path: _data/autoridades.yml
+    format: yaml
+    fields:
+      - { name: elecciones, label: "Texto sobre las últimas elecciones", type: text }
+      - name: directiva
+        label: Comisión Directiva
+        type: object
+        list: true
+        fields:
+          - { name: periodo, label: Período, type: string }
+          - { name: titulares, label: Titulares, type: text }
+          - { name: suplentes, label: Suplentes, type: text }
+      - name: fiscal
+        label: Comisión Fiscal
+        type: object
+        list: true
+        fields:
+          - { name: periodo, label: Período, type: string }
+          - { name: titulares, label: Titulares, type: text }
+          - { name: suplentes, label: Suplentes, type: text }
+      - name: electoral
+        label: Comisión Electoral
+        type: object
+        list: true
+        fields:
+          - { name: periodo, label: Período, type: string }
+          - { name: titulares, label: Titulares, type: text }
+
+  - name: paginas
+    label: Páginas
+    type: collection
+    path: ""
+    filter: { include: "*.md", exclude: README.md }
+    fields:
+      - { name: title, label: Título, type: string }
+      - { name: bajada, label: Bajada, type: text }
+      - { name: body, label: Texto, type: rich-text }

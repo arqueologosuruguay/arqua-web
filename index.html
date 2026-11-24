@@ -1,0 +1,67 @@
+---
+layout: base
+title: Inicio
+---
+<section class="portada">
+  <div class="portada__fila">
+    <div class="portada__texto">
+      <p class="antetitulo">Desde 2015</p>
+      <h1>Asociación de Arqueología del Uruguay</h1>
+      <p>Nucleamos a profesionales de la arqueología de todo el país para defender la profesión, promover la investigación y proteger el patrimonio arqueológico del Uruguay.</p>
+      <div class="portada__botones">
+        <a class="boton boton--naranja" href="{{ '/institucional/' | relative_url }}">Conocé Arqua
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="boton boton--borde" href="{{ '/asociate/' | relative_url }}">Asociate</a>
+      </div>
+    </div>
+    <figure class="portada__foto">
+      <img src="{{ '/assets/img/portada.jpg' | relative_url }}" alt="Panteones en un campo florecido de Cerro Largo">
+      <figcaption>Panteones en Cerro Largo. Foto: Moira Sotelo y Paula Larghero</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="seccion">
+  <div class="contenedor dos-columnas">
+    <div>
+      <h2>Quiénes somos</h2>
+      <p class="grande">Arqua se constituyó el 24 de julio de 2015 en su Asamblea Fundacional, después de un año de trabajo colectivo, para cubrir el vacío que había dejado la disolución de la Asociación Uruguaya de Arqueología.</p>
+      <p class="grande">Reúne a profesionales de la arqueología de distintas áreas y ámbitos de trabajo, que comparten la preocupación por el patrimonio arqueológico del país. Es una asociación civil sin fines de lucro, independiente de partidos políticos, escuelas científicas y creencias religiosas.</p>
+    </div>
+    <nav class="lista-enlaces" aria-label="Secciones institucionales">
+      <a href="{{ '/institucional/' | relative_url }}">Historia y fines <span aria-hidden="true">→</span></a>
+      <a href="{{ '/institucional/autoridades/' | relative_url }}">Autoridades <span aria-hidden="true">→</span></a>
+      <a href="{{ '/institucional/subcomisiones/' | relative_url }}">Subcomisiones de trabajo <span aria-hidden="true">→</span></a>
+      <a href="{{ '/posicionamientos/' | relative_url }}">Posicionamientos y declaraciones <span aria-hidden="true">→</span></a>
+      <a href="{{ '/assets/pdf/estatutos-arqua-2015.pdf' | relative_url }}">Estatutos (PDF) <span aria-hidden="true">→</span></a>
+    </nav>
+  </div>
+</section>
+
+<section class="seccion" style="padding-top: 16px">
+  <div class="contenedor">
+    <div class="cabeza-seccion">
+      <h2>Novedades</h2>
+      <a href="{{ '/novedades/' | relative_url }}"><b>Ver todas las novedades →</b></a>
+    </div>
+    <div class="grilla">
+      {% assign recientes = site.novedades | where_exp: "n", "n.archivo != true" | sort: "date" | reverse %}
+      {% for n in recientes limit: 3 %}{% include tarjeta-novedad.html n=n %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="franja seccion">
+  <div class="contenedor dos-columnas" style="align-items: center">
+    <div>
+      <h2>Sumate a Arqua</h2>
+      <p class="grande">Si trabajás o estudiás arqueología en Uruguay, asociate. Participar te da voz en la asociación, acceso a sus actividades y la posibilidad de integrar sus subcomisiones.</p>
+    </div>
+    <div class="pasos">
+      <div><b>1</b><span>Conseguí el aval de tres socias o socios activos.</span></div>
+      <div><b>2</b><span>Enviá tu solicitud a la Comisión Directiva.</span></div>
+      <div><b>3</b><span>La Comisión Directiva resuelve el ingreso.</span></div>
+      <p style="margin: 6px 0 0"><a class="boton boton--oscuro" href="{{ '/asociate/' | relative_url }}">Cómo asociarse</a></p>
+    </div>
+  </div>
+</section>

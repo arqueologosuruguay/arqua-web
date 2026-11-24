@@ -1,0 +1,42 @@
+# Configuración del sitio de Arqua
+title: "Arqua"
+nombre: "Asociación de Arqueología del Uruguay"
+nombre_registrado: "Arqueólogos de Uruguay Asociados"
+description: "Asociación que nuclea a profesionales de la arqueología en Uruguay."
+lang: es
+
+# Mientras el sitio se ve en arqueologosuruguay.github.io/arqua-web, baseurl es "/arqua-web".
+# Cuando se conecte el dominio arqua.com.uy, cambiar a: baseurl: ""  y  url: "https://arqua.com.uy"
+url: "https://arqueologosuruguay.github.io"
+baseurl: "/arqua-web"
+
+correo: "arqueologos.uruguay@gmail.com"
+correo_tesoreria: "tesoreria.arqua@gmail.com"
+instagram: "https://www.instagram.com/arqua.difusion/"
+facebook: "https://www.facebook.com/profile.php?id=61583400462785"
+youtube: "" # pegar acá el enlace del canal de YouTube
+
+timezone: America/Montevideo
+permalink: pretty
+
+collections:
+  novedades:
+    output: true
+    permalink: /novedades/:name/
+  declaraciones:
+    output: true
+    permalink: /posicionamientos/:name/
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: pagina }
+  - scope: { path: "", type: novedades }
+    values: { layout: novedad }
+  - scope: { path: "", type: declaraciones }
+    values: { layout: declaracion }
+
+exclude:
+  - README.md
+  - .pages.yml
+  - Gemfile
+  - Gemfile.lock

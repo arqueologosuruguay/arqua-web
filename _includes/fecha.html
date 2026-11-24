@@ -1,0 +1,1 @@
+{%- assign f = include.fecha -%}{%- if include.texto and include.texto != "" -%}{{ include.texto }}{%- else -%}{%- assign m = f | date: "%-m" | minus: 1 -%}{{ f | date: "%-d" }} de {{ site.data.meses[m] }} de {{ f | date: "%Y" }}{%- endif -%}
