@@ -74,6 +74,7 @@ h3 { font-weight: 700; font-size: 1.25rem; margin: 0; }
 .portada__botones { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 6px; }
 @media (max-width: 860px) {
   .portada__foto { height: 300px; }
+  .portada__foto img { object-position: 25% 45%; }
   .portada__caja { position: static; padding: 0; }
   .portada__texto { max-width: none; border-radius: 0; padding: 40px 24px 48px; background: var(--negro); }
 }
