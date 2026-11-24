@@ -2,8 +2,7 @@
 title: "Arqua tiene nueva página de Facebook"
 date: 2026-06-11
 tipo: Noticia
-imagen: /assets/img/novedades/nueva-pagina-facebook-2026-v2.jpg
-imagen_completa: true
+imagen: /assets/img/novedades/nueva-pagina-facebook-2026-v3.jpg
 imagen_texto: "Afiche: nueva página de Facebook de Arqua"
 resumen: "Estrenamos una página oficial en Facebook. La anterior deja de usarse."
 ---
