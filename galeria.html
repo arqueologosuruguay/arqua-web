@@ -1,19 +1,5 @@
 ---
 title: Galería
-bajada: Imágenes de trabajos y sitios arqueológicos del Uruguay.
+bajada: Imágenes de las actividades de Arqua.
 ---
-<h2>Panteones en Cerro Largo</h2>
-<p>Fotos de Moira Sotelo y Paula Larghero.</p>
-<div class="galeria">
-{% for i in (1..6) %}
-  <figure><img src="{{ '/assets/img/fotos/panteones_0' | append: i | append: '.jpg' | relative_url }}" alt="Panteón en Cerro Largo, foto {{ i }}" loading="lazy"></figure>
-{% endfor %}
-</div>
-
-<h2>Sitios y trabajos de campo</h2>
-<div class="galeria">
-  <figure><img src="{{ '/assets/img/fotos/conos-cerro-travieso.jpg' | relative_url }}" alt="Conos de piedra en el cerro Travieso" loading="lazy"><figcaption>Conos de piedra, cerro Travieso (Tacuarembó)</figcaption></figure>
-  <figure><img src="{{ '/assets/img/fotos/fuente-colonial-ciudad-vieja.jpg' | relative_url }}" alt="Fuente de agua de época colonial excavada en la Ciudad Vieja" loading="lazy"><figcaption>Fuente de agua de época colonial, Ciudad Vieja (Montevideo)</figcaption></figure>
-  <figure><img src="{{ '/assets/img/fotos/medano-boca-del-rosario.jpg' | relative_url }}" alt="Trabajo en un médano frente al Río de la Plata" loading="lazy"><figcaption>Paleosuelo en médano, Boca del Rosario (Colonia)</figcaption></figure>
-  <figure><img src="{{ '/assets/img/fotos/piedras-en-el-campo.jpg' | relative_url }}" alt="Afloramiento de piedras en un campo" loading="lazy"><figcaption>[Lugar de la foto]</figcaption></figure>
-</div>
+{% include galeria-actividades.html %}
