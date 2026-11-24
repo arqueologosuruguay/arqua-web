@@ -160,6 +160,10 @@ h3 { font-weight: 700; font-size: 1.25rem; margin: 0; }
 .pie__columnas > * { flex: 1 1 400px; min-width: 0; }
 .pie__derecha { display: flex; flex-wrap: wrap; gap: 32px 64px; }
 .pie__derecha > * { flex: 0 1 auto; }
+@media (min-width: 900px) {
+  .pie__derecha { justify-content: flex-end; text-align: right; }
+  .pie__derecha .redes { justify-content: flex-end; }
+}
 .pie__marca { font-family: var(--titulos); font-weight: 800; font-size: 1.6rem; color: var(--blanco); }
 .pie__titulo { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--naranja); }
 .redes { display: flex; gap: 10px; }
