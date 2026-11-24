@@ -17,8 +17,7 @@ Según el artículo 4 del Estatuto:
 
 ## Cómo asociarse
 
-1. Conseguí el aval de tres socias o socios activos.<br>
-   <a class="boton boton--oscuro" style="margin: 10px 0 6px" href="https://docs.google.com/document/d/1X0q3u_lEKEKbRf9kfL3giMYIWDKhQpg1VuHxjYoKBCQ/export?format=docx">Descargar modelo de nota</a>
+1. Conseguí el aval de tres socias o socios activos y generá tu solicitud. Podés descargar el [modelo aquí](https://docs.google.com/document/d/1X0q3u_lEKEKbRf9kfL3giMYIWDKhQpg1VuHxjYoKBCQ/export?format=docx).
 2. Enviá la solicitud por escrito a la Comisión Directiva, a [{{ site.correo }}](mailto:{{ site.correo }}?subject=Solicitud%20de%20ingreso%20a%20Arqua).
 3. La Comisión Directiva resuelve el ingreso.
 
