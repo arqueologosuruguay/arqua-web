@@ -124,6 +124,7 @@ h3 { font-weight: 700; font-size: 1.25rem; margin: 0; }
 .texto th { background: var(--arena); font-weight: 600; }
 .texto blockquote { margin: 24px 0; padding: 4px 0 4px 20px; border-left: 3px solid var(--naranja); color: var(--gris-oscuro); }
 .destacada { width: 100%; border-radius: 12px; margin-bottom: 24px; }
+.texto .destacada { margin-top: 24px; }
 .aviso { background: var(--arena); border-radius: 10px; padding: 16px 20px; }
 
 .lista-docs { list-style: none; padding: 0; margin: 0; border-bottom: 1px solid var(--linea); }
