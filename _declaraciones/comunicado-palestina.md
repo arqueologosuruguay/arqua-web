@@ -1,6 +1,7 @@
 ---
 title: "Comunicado sobre Palestina"
 date: 2024-05-22
+enlace: https://drive.google.com/file/d/1Fe9jEGAjO6NIRgkWNcbsBpK6Wn8r5aHj/view
 resumen: "Arqua se solidariza con la población palestina y exige el ingreso de ayuda humanitaria y un alto al fuego inmediato y permanente."
 pdf: /assets/pdf/comunicado-palestina-2024.pdf
 ---

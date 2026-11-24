@@ -10,4 +10,3 @@ Escribinos por correo o seguinos en las redes.
 - **Facebook:** [página de Arqua]({{ site.facebook }})
 {% if site.youtube != "" %}- **YouTube:** [canal de Arqua]({{ site.youtube }}){% endif %}
 
-<p><a class="boton boton--oscuro" href="mailto:{{ site.correo }}">Escribirnos</a></p>

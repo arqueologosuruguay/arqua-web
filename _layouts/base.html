@@ -36,6 +36,7 @@
         <p>{{ site.nombre }}</p>
         <p>Montevideo, Uruguay</p>
       </div>
+      <div class="pie__derecha">
       <div>
         <p class="pie__titulo">Contacto</p>
         <p><a href="mailto:{{ site.correo }}">{{ site.correo }}</a></p>
@@ -48,6 +49,7 @@
           <a href="{{ site.facebook }}" aria-label="Facebook de Arqua"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 8H17V4.5h-2.5A3.5 3.5 0 0 0 11 8v2.5H8.5V14H11v6.5h3.5V14H17l.5-3.5h-3V8.5c0-.3.2-.5.5-.5z"/></svg></a>
           {% if site.youtube != "" %}<a href="{{ site.youtube }}" aria-label="Canal de YouTube de Arqua"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="3.5"/><path d="M10 9.3v5.4l4.6-2.7z"/></svg></a>{% endif %}
         </div>
+      </div>
       </div>
     </div>
     <p class="pie__legal">{{ site.nombre }} (Arqua). Nombre registrado: {{ site.nombre_registrado }}. © {{ site.time | date: "%Y" }}.</p>
