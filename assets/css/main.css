@@ -65,7 +65,7 @@ h3 { font-weight: 700; font-size: 1.25rem; margin: 0; }
 /* Portada: foto horizontal a todo el ancho con el texto en un recuadro */
 .portada { position: relative; background: var(--negro); color: var(--blanco); }
 .portada__foto { margin: 0; position: relative; height: clamp(480px, 46vw, 680px); }
-.portada__foto img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; display: block; }
+.portada__foto img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; display: block; }
 .portada__foto figcaption { position: absolute; left: 16px; bottom: 16px; background: rgba(27,25,22,0.82); color: var(--blanco); font-size: 13px; padding: 6px 10px; border-radius: 4px; }
 .portada__caja { position: absolute; inset: 0; display: flex; justify-content: flex-end; align-items: center; pointer-events: none; }
 .portada__texto { pointer-events: auto; max-width: 540px; background: rgba(27,25,22,0.9); padding: 40px 44px; border-radius: 4px; display: flex; flex-direction: column; gap: 18px; }
@@ -74,7 +74,7 @@ h3 { font-weight: 700; font-size: 1.25rem; margin: 0; }
 .portada__botones { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 6px; }
 @media (max-width: 860px) {
   .portada__foto { height: 300px; }
-  .portada__foto img { object-position: 25% 45%; }
+  .portada__foto img { object-position: 30% 50%; }
   .portada__caja { position: static; padding: 0; }
   .portada__texto { max-width: none; border-radius: 0; padding: 40px 24px 48px; background: var(--negro); }
 }
@@ -98,6 +98,7 @@ h3 { font-weight: 700; font-size: 1.25rem; margin: 0; }
 .grilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
 .tarjeta { display: flex; flex-direction: column; background: var(--blanco); border: 1px solid var(--linea); border-radius: 12px; overflow: hidden; }
 .tarjeta > img { width: 100%; height: 200px; object-fit: cover; display: block; }
+.tarjeta > img.completa { object-fit: contain; background: #F2E7DB; }
 .tarjeta__sin-imagen { height: 200px; background: var(--negro); color: var(--blanco); display: flex; flex-direction: column; justify-content: flex-end; gap: 8px; padding: 24px; font-family: var(--titulos); font-weight: 700; font-size: 1.15rem; }
 .tarjeta__sin-imagen span { display: block; width: 28px; height: 3px; background: var(--naranja); }
 .tarjeta__cuerpo { padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 10px; }

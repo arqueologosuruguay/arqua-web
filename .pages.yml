@@ -24,6 +24,7 @@ content:
         required: true
         options: { values: [Noticia, Evento, Declaración, Asamblea, Congreso, Curso, Prensa] }
       - { name: imagen, label: Imagen, type: image }
+      - { name: imagen_completa, label: "Mostrar la imagen completa en la tarjeta (sin recortar; útil para afiches)", type: boolean }
       - { name: imagen_texto, label: "Descripción de la imagen (para personas que no ven)", type: string }
       - { name: resumen, label: "Resumen (una o dos frases)", type: text }
       - { name: body, label: Texto, type: rich-text }
