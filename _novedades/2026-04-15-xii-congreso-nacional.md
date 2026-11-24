@@ -3,8 +3,8 @@ title: "XII Congreso Nacional de Arqueología Uruguaya"
 date: 2026-04-15
 fecha_texto: "15 al 18 de abril de 2026"
 tipo: Congreso
-imagen: /assets/img/novedades/xii-cnau.jpg
-imagen_texto: "Afiche del XII Congreso Nacional de Arqueología Uruguaya"
+imagen: /assets/img/novedades/xii-cnau-cartel.jpg
+imagen_texto: "Cartel del XII Congreso Nacional de Arqueología Uruguaya en la reja de la Casa de la Cultura de Mercedes"
 resumen: "Del 15 al 18 de abril, Mercedes recibió a 188 personas en cuatro días de trabajo, con 11 simposios y más de 120 ponencias y pósteres."
 ---
 
