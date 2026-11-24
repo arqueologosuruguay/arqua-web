@@ -12,8 +12,6 @@ Sitio de la Asociación de Arqueología del Uruguay (Arqua). Está hecho con Jek
 
 Lo mismo sirve para **Declaraciones**, **Autoridades** y las **Páginas** de texto.
 
-Para que una novedad deje de aparecer en el inicio y pase al archivo, marcá **Pasar al archivo**.
-
 ## Dónde está cada cosa
 
 | Qué | Dónde |

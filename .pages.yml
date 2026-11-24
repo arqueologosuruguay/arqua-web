@@ -26,7 +26,6 @@ content:
       - { name: imagen, label: Imagen, type: image }
       - { name: imagen_texto, label: "Descripción de la imagen (para personas que no ven)", type: string }
       - { name: resumen, label: "Resumen (una o dos frases)", type: text }
-      - { name: archivo, label: "Pasar al archivo", type: boolean, default: false }
       - { name: body, label: Texto, type: rich-text }
 
   - name: declaraciones
