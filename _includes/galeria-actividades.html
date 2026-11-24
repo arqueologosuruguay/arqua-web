@@ -2,7 +2,7 @@
 
 <h3>XII Congreso Nacional de Arqueología 2026</h3>
 <p>Mercedes (Soriano), 15 al 18 de abril de 2026.</p>
-{% assign total_cnau = 74 %}
+{% assign total_cnau = 66 %}
 <div class="galeria galeria--visor" data-visor>
   {% for i in (1..total_cnau) %}{% capture n %}{% if i < 10 %}0{% endif %}{{ i }}{% endcapture %}
   <a href="{{ '/assets/img/galeria/cnau-2026/' | append: n | append: '.jpg' | relative_url }}"><img src="{{ '/assets/img/galeria/cnau-2026/mini/' | append: n | append: '.jpg' | relative_url }}" alt="XII Congreso Nacional de Arqueología, foto {{ i }} de {{ total_cnau }}" width="600" height="450" loading="lazy"></a>{% endfor %}
