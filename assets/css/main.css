@@ -135,6 +135,23 @@ h3 { font-weight: 700; font-size: 1.25rem; margin: 0; }
 .galeria figure { margin: 0; }
 .galeria img { width: 100%; height: 220px; object-fit: cover; border-radius: 8px; display: block; }
 .galeria figcaption { font-size: 14px; color: var(--gris); padding-top: 6px; }
+.galeria--visor { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+@media (min-width: 700px) { .galeria--visor { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; } }
+.galeria--visor a { display: block; border-radius: 8px; overflow: hidden; }
+.galeria--visor a:focus-visible { outline: 3px solid var(--naranja); outline-offset: 2px; }
+.galeria--visor img { height: auto; aspect-ratio: 4 / 3; transition: transform .2s; }
+.galeria--visor a:hover img { transform: scale(1.03); }
+.visor { width: 100vw; height: 100vh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: rgba(15,14,12,0.95); color: var(--blanco); }
+.visor::backdrop { background: rgba(15,14,12,0.95); }
+.visor[open] { display: flex; align-items: center; justify-content: center; }
+.visor__foto { max-width: calc(100vw - 32px); max-height: calc(100vh - 96px); object-fit: contain; border-radius: 4px; }
+.visor__contador { position: absolute; left: 0; right: 0; bottom: 12px; margin: 0; text-align: center; font-size: 14px; color: #d8d3cb; }
+.visor button { position: absolute; background: rgba(27,25,22,0.7); color: var(--blanco); border: 0; border-radius: 50%; width: 48px; height: 48px; font-size: 32px; line-height: 1; cursor: pointer; }
+.visor button:hover, .visor button:focus-visible { background: var(--naranja); color: var(--negro); }
+.visor__cerrar { top: 12px; right: 12px; }
+.visor__flecha { top: 50%; transform: translateY(-50%); }
+.visor__flecha--ant { left: 12px; }
+.visor__flecha--sig { right: 12px; }
 
 /* Pie */
 .pie { background: var(--negro); color: #E9E4DC; padding: 56px 0 32px; margin-top: 0; }
