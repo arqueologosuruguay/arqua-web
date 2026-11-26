@@ -21,4 +21,7 @@ Promueve la igualdad de género en la arqueología y en la asociación, y la vis
 
 Organiza el Congreso Nacional de Arqueología Uruguaya. La duodécima edición fue en Mercedes, en abril de 2026.
 
-Todas las personas asociadas pueden participar escribiendo al correo de Arqua: [{{ site.correo }}](mailto:{{ site.correo }}).
+---
+
+**¿Querés sumarte?** Todas las personas asociadas pueden participar en cualquiera de las subcomisiones escribiendo al correo de Arqua: [{{ site.correo }}](mailto:{{ site.correo }}).
+{: .invitacion}
