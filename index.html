@@ -20,6 +20,14 @@ title: Inicio
         <figcaption>Conos de piedra, cerro Travieso, Tacuarembó</figcaption>
       </figure>
     </div>
+    <div class="portada__flechas" hidden>
+      <button type="button" class="portada__flecha" data-paso="-1" aria-label="Foto anterior">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+      </button>
+      <button type="button" class="portada__flecha" data-paso="1" aria-label="Foto siguiente">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+    </div>
   </div>
   <div class="contenedor portada__caja">
     <div class="portada__texto">
@@ -37,16 +45,28 @@ title: Inicio
 <script>
 (function () {
   var cinta = document.querySelector('.portada__cinta');
+  var flechas = document.querySelector('.portada__flechas');
   if (!cinta) return;
-  var diapos = cinta.children, total = diapos.length, actual = 0;
-  if (total < 2 || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  setInterval(function () {
-    if (document.hidden) return;
+  var diapos = cinta.children, total = diapos.length, actual = 0, reloj = null;
+  if (total < 2) return;
+  var quieto = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function ir(n) {
     diapos[actual].setAttribute('aria-hidden', 'true');
-    actual = (actual + 1) % total;
+    actual = (n + total) % total;
     diapos[actual].removeAttribute('aria-hidden');
     cinta.style.transform = 'translateX(' + (-100 * actual) + '%)';
-  }, 40000);
+  }
+  function arrancar() {
+    if (quieto) return;
+    clearInterval(reloj);
+    reloj = setInterval(function () { if (!document.hidden) ir(actual + 1); }, 40000);
+  }
+  if (flechas) {
+    flechas.hidden = false;
+    flechas.querySelector('[data-paso="-1"]').addEventListener('click', function () { ir(actual - 1); arrancar(); });
+    flechas.querySelector('[data-paso="1"]').addEventListener('click', function () { ir(actual + 1); arrancar(); });
+  }
+  arrancar();
 })();
 </script>
 
