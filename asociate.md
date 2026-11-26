@@ -10,7 +10,6 @@ Según el artículo 4 del Estatuto:
 | Categoría | Quién puede serlo | En la Asamblea |
 |---|---|---|
 | Activa o activo | Título en Ciencias Antropológicas con formación en Arqueología (FHCE, Udelar), o título revalidado ante la Udelar | Voz y voto. Puede postularse a cargos |
-| Adherente | Título con formación en arqueología de otra universidad, con residencia y ejercicio profesional en Uruguay | Voz, sin voto |
 | Suscriptora o suscriptor | Estudiantes de arqueología | Voz, sin voto |
 | Honoraria u honorario | Personas designadas por la Asamblea por aportes relevantes a la profesión o a la asociación | Voz, sin voto |
 | Fundadora o fundador | Quienes participaron en la fundación en 2015 | Voz y voto. Puede postularse a cargos |

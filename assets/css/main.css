@@ -139,6 +139,9 @@ h3 { font-weight: 700; font-size: 1.25rem; margin: 0; }
 .contacto__foto { margin: 0; }
 .contacto__foto img { width: 100%; border-radius: 12px; display: block; }
 @media (max-width: 700px) { .contacto { grid-template-columns: 1fr; } }
+hr { border: 0; border-top: 2px solid var(--linea); margin: 40px 0 24px; }
+.invitacion { margin: 8px 0 0; background: var(--arena); border-left: 6px solid var(--naranja); border-radius: 10px; padding: 18px 22px; font-size: 1.05rem; }
+.invitacion strong { font-family: var(--titulos); color: var(--negro); }
 .aviso { background: var(--arena); border-radius: 10px; padding: 16px 20px; }
 
 .lista-docs { list-style: none; padding: 0; margin: 0; border-bottom: 1px solid var(--linea); }
