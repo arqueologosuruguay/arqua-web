@@ -6,9 +6,8 @@ tipo: Evento
 imagen: /assets/img/subidas/asamblea fundacional.jpg
 imagen_completa: false
 imagen_texto: Asamblea fundacional (2015)
-resumen: Un 24 de julio de 2015 se consagró Arqua con el propósito de reunir y
-  fortalecer a quienes ejercen la arqueología en nuestro país. Hoy celebramos un
-  nuevo aniversario, la asociación cumple 11 años de trabajo colectivo.
+resumen: "Un 24 de julio de 2015 se consagró Arqua con el propósito de reunir y
+  fortalecer a quienes ejercen la arqueología en nuestro país. "
 ---
 Un 24 de julio de 2015 se consagró ARQUA con el propósito de reunir y fortalecer a quienes ejercen la arqueología en nuestro país. Desde entonces, hemos trabajado para promover la profesionalización de la disciplina, generar espacios de intercambio a través de conversatorios, jornadas científicas y congresos entre otras instancias con el fin de impulsar la divulgación del conocimiento y contribuir a la defensa del patrimonio arqueológico nacional.
 
