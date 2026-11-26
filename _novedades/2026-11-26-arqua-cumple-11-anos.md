@@ -3,9 +3,9 @@ title: Arqua cumple 11 años
 date: 2026-07-24
 fecha_texto: 24 de julio de 2026
 tipo: Evento
-imagen: /assets/img/subidas/754725165_122143365105113348_4439057138462323026_n-1.jpg
+imagen: /assets/img/subidas/asamblea fundacional.jpg
 imagen_completa: false
-imagen_texto: Reunión de Arqua.
+imagen_texto: Asamblea fundacional (2015)
 resumen: Un 24 de julio de 2015 se consagró Arqua con el propósito de reunir y
   fortalecer a quienes ejercen la arqueología en nuestro país. Hoy celebramos un
   nuevo aniversario, la asociación cumple 11 años de trabajo colectivo.
