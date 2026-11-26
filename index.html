@@ -3,10 +3,24 @@ layout: base
 title: Inicio
 ---
 <section class="portada">
-  <figure class="portada__foto">
-    <img src="{{ '/assets/img/portada-trabajo-campo.jpg' | relative_url }}" alt="Manos con guantes rojos limpian con pincel y pala un anillo de piedra en la sierra de Aguirre, Rocha">
-    <figcaption>Excavación de anillo de piedra, sierra de Aguirre, Rocha</figcaption>
-  </figure>
+  <div class="portada__foto" aria-roledescription="carrusel" aria-label="Fotos de trabajo arqueológico">
+    <div class="portada__cinta">
+      <figure class="portada__diapo" style="--pos: 50% 50%; --pos-movil: 25% 50%">
+        <img src="{{ '/assets/img/portada-relevamiento-gps.jpg' | relative_url }}" alt="Mano con un GPS de mano en primer plano; al fondo, dos personas trabajan en una excavación en un campo">
+      </figure>
+      <figure class="portada__diapo" style="--pos: 50% 50%; --pos-movil: 15% 50%" aria-hidden="true">
+        <img src="{{ '/assets/img/portada-estacion-total.jpg' | relative_url }}" alt="Persona junto a una estación total sobre trípode, frente a un paisaje de sierras">
+      </figure>
+      <figure class="portada__diapo" style="--pos: 50% 40%; --pos-movil: 30% 50%" aria-hidden="true">
+        <img src="{{ '/assets/img/portada-excavacion-anillo.jpg' | relative_url }}" alt="Manos con guantes rojos limpian con pincel y pala un anillo de piedra en la sierra de Aguirre, Rocha">
+        <figcaption>Excavación de anillo de piedra, sierra de Aguirre, Rocha</figcaption>
+      </figure>
+      <figure class="portada__diapo" style="--pos: 50% 30%; --pos-movil: 45% 50%" aria-hidden="true">
+        <img src="{{ '/assets/img/portada-conos-travieso.jpg' | relative_url }}" alt="Conos de piedra en lo alto del cerro Travieso, Tacuarembó; una persona con campera amarilla toma puntos con un GPS junto a un alambrado">
+        <figcaption>Conos de piedra, cerro Travieso, Tacuarembó</figcaption>
+      </figure>
+    </div>
+  </div>
   <div class="contenedor portada__caja">
     <div class="portada__texto">
       <p class="antetitulo">Desde 2015</p>
@@ -20,6 +34,21 @@ title: Inicio
     </div>
   </div>
 </section>
+<script>
+(function () {
+  var cinta = document.querySelector('.portada__cinta');
+  if (!cinta) return;
+  var diapos = cinta.children, total = diapos.length, actual = 0;
+  if (total < 2 || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  setInterval(function () {
+    if (document.hidden) return;
+    diapos[actual].setAttribute('aria-hidden', 'true');
+    actual = (actual + 1) % total;
+    diapos[actual].removeAttribute('aria-hidden');
+    cinta.style.transform = 'translateX(' + (-100 * actual) + '%)';
+  }, 40000);
+})();
+</script>
 
 <section class="seccion">
   <div class="contenedor dos-columnas">
