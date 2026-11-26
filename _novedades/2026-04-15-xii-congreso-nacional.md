@@ -1,13 +1,15 @@
 ---
-title: "XII Congreso Nacional de Arqueología Uruguaya"
+title: XII Congreso Nacional de Arqueología Uruguaya
 date: 2026-04-15
-fecha_texto: "15 al 18 de abril de 2026"
+fecha_texto: 15 al 18 de abril de 2026
 tipo: Congreso
-imagen: /assets/img/novedades/xii-cnau-cartel.jpg
-imagen_texto: "Cartel del XII Congreso Nacional de Arqueología Uruguaya en la reja de la Casa de la Cultura de Mercedes"
-resumen: "Del 15 al 18 de abril, Mercedes recibió a 188 personas en cuatro días de trabajo, con 11 simposios y más de 120 ponencias y pósteres."
+imagen: /assets/img/subidas/IMG_20260417_205009051_HDR-1.jpg
+imagen_completa: false
+imagen_texto: Cartel del XII Congreso Nacional de Arqueología Uruguaya en la
+  reja de la Casa de la Cultura de Mercedes
+resumen: Del 15 al 18 de abril, Mercedes recibió a 188 personas en cuatro días
+  de trabajo, con 11 simposios y más de 120 ponencias y pósteres.
 ---
-
 Del 15 al 18 de abril de 2026 se realizó en la Casa de la Cultura de Mercedes (Soriano) el XII Congreso Nacional de Arqueología Uruguaya, organizado por Arqua bajo el lema «Arqueologías en transición: memorias para construir el futuro». El congreso fue declarado de interés ministerial por el Ministerio de Educación y Cultura.
 
 Participaron 188 personas: profesionales de Uruguay y de la región, estudiantes de grado, público general e integrantes de colectivos indígenas y afrodescendientes.
