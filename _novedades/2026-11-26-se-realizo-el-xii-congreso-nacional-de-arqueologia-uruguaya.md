@@ -8,11 +8,7 @@ imagen_completa: false
 imagen_texto: Foto de grupo tras la conferencia de cierre.
 resumen: Del 15 al 18 de abril se llevó a cabo el 12.º Congreso Nacional de
   Arqueología en la ciudad de Mercedes, Soriano. El encuentro contó con más de
-  135 ponencias, pósters, además de 2 mesas redondas y 3 conferencias. Allí se
-  abordaron diversas líneas de trabajo, desde la museología y la arqueología
-  histórica hasta estudios de restos óseos y materiales líticos, así como
-  abordajes bibliográficos de la Licenciatura en Ciencias Antropológicas, entre
-  muchas otras.
+  135 ponencias, pósters, además de 2 mesas redondas y 3 conferencias.
 ---
 Del 15 al 18 de abril se llevó a cabo el 12.º Congreso Nacional de Arqueología en la ciudad de Mercedes, Soriano.
 
