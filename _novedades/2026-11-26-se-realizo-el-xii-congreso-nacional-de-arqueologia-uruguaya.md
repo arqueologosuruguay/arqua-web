@@ -6,9 +6,9 @@ tipo: Asamblea
 imagen: /assets/img/subidas/Captura de pantalla 2026-11-26 110420.png
 imagen_completa: false
 imagen_texto: Asamblea anual en el espacio Colabora.
-resumen: Del 15 al 18 de abril se llevó a cabo el 12.º Congreso Nacional de
-  Arqueología en la ciudad de Mercedes, Soriano. El encuentro contó con más de
-  135 ponencias, pósters, además de 2 mesas redondas y 3 conferencias.
+resumen: "El 31 de octubre se llevó a cabo la Asamblea Anual de la Asociación,
+  con la participación de socias y socios tanto de manera presencial, en el
+  Espacio Colabora, como virtual a través de Zoom.  "
 ---
 El 31 de octubre se llevó a cabo la Asamblea Anual de la Asociación, con la participación de socias y socios tanto de manera presencial, en el Espacio Colabora, como virtual a través de Zoom.  
 
