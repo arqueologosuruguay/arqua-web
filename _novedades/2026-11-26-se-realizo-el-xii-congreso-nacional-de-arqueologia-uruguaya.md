@@ -8,7 +8,7 @@ imagen_completa: false
 imagen_texto: Asamblea anual en el espacio Colabora.
 resumen: "El 31 de octubre se llevó a cabo la Asamblea Anual de la Asociación,
   con la participación de socias y socios tanto de manera presencial, en el
-  Espacio Colabora, como virtual a través de Zoom.  "
+  espacio Colabora, como virtual a través de Zoom.  "
 ---
 El 31 de octubre se llevó a cabo la Asamblea Anual de la Asociación, con la participación de socias y socios tanto de manera presencial, en el Espacio Colabora, como virtual a través de Zoom.  
 
