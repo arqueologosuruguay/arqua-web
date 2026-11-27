@@ -5,10 +5,9 @@ nombre_registrado: "Arqueólogos de Uruguay Asociados"
 description: "Asociación que nuclea a profesionales de la arqueología en Uruguay."
 lang: es
 
-# Mientras el sitio se ve en arqueologosuruguay.github.io/arqua-web, baseurl es "/arqua-web".
-# Cuando se conecte el dominio arqua.com.uy, cambiar a: baseurl: ""  y  url: "https://arqua.com.uy"
-url: "https://arqueologosuruguay.github.io"
-baseurl: "/arqua-web"
+# El sitio se publica en el dominio propio arqua.com.uy (ver el archivo CNAME).
+url: "https://arqua.com.uy"
+baseurl: ""
 
 correo: "arqueologos.uruguay@gmail.com"
 correo_tesoreria: "tesoreria.arqua@gmail.com"
