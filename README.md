@@ -29,11 +29,14 @@ Lo mismo sirve para **Declaraciones**, **Autoridades** y las **Páginas** de tex
 
 GitHub Pages arma el sitio solo a partir de la rama `main` (Settings → Pages → Deploy from a branch → `main` / root).
 
-Para usar el dominio **arqua.com.uy**:
+El sitio usa el dominio **arqua.com.uy** (archivo `CNAME` en la raíz del repositorio; en `_config.yml`, `url: "https://arqua.com.uy"` y `baseurl: ""`).
 
-1. En `_config.yml`, cambiar `baseurl` a `""` y `url` a `"https://arqua.com.uy"`.
-2. En Settings → Pages → Custom domain, escribir `arqua.com.uy`.
-3. En el proveedor del dominio, crear los registros DNS que indica GitHub (registros A a las IP de GitHub Pages y un CNAME `www` a `arqueologosuruguay.github.io`).
+El DNS del dominio se administra en Cloudflare (el dominio está registrado en nic.uy):
+
+- Cuatro registros **A** para `arqua.com.uy`: 185.199.108.153, 185.199.109.153, 185.199.110.153 y 185.199.111.153 (con la nube gris, «Solo DNS»).
+- Un registro **CNAME** `www` → `arqueologosuruguay.github.io` (también «Solo DNS»).
+
+En Settings → Pages tiene que figurar `arqua.com.uy` como Custom domain y estar marcado **Enforce HTTPS**.
 
 ## Probar en una computadora
 
